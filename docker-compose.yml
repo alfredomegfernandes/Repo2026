@@ -1,6 +1,11 @@
 
 services:
-  app:
-    build: .
+  jenkins:
+    image: jenkins/jenkins:lts
     ports:
-      - "8585:8585"
+      - "8081:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+volumes:
+  jenkins_home:
