@@ -8,6 +8,9 @@ public class TestSekJkApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TestSekJkApplication.class, args);
+	
+		System.out.println("roll");
 	}
 
+	
 }
